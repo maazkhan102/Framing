@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.frame1{
+    height: 280px;
+    width: 320px;
+   background-image: url("/public/f.png");
+   background-size: 320px 280px;
+   justify-content: center;
+   align-items: center;
+    background-repeat: no-repeat;
+}
+.frame1 img{
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.framee1{
+    height: 320px;
+    width: 280px;
+   background-image: url("/public/f.png");
+   background-size: 280px 320px;
+   justify-content: center;
+   align-items: center;
+    background-repeat: no-repeat;
+}
+.framee1 img{
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+.frame2{
+    height: 280px;
+    width: 313px;
+    background-image: url("/public/f2.png");
+    background-size: 320px 280px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.frame2 img{
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+}
+.framee2{
+    height: 320px;
+    width: 276px;
+    background-image: url("/public/f2.png");
+    background-size: 280px 320px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.framee2 img{
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+}
+
