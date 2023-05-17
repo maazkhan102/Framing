@@ -1,0 +1,92 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+   
+  .box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+  }
+   
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 30px);
+    top: calc(100vh - 85vh - 33px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  }
+  
+.App-header {
+  /* padding-top: 20px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+label {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.cropped-image {
+  height: 600px;
+  width: auto;
+}
+
+.cropped-image-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+._coverImage-holder  {
+  padding: 25px 40px;
+  background-color:black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.crop-container {
+  height: 600px;
+  width: 600px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  position: absolute;
+  bottom: -15px;
+}

@@ -1,14 +1,131 @@
 .container{
+    margin: 0%;
+    padding: 0%;
+}
+.form-inline{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 3px 6px gray;
+    border-style: double;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: ghostwhite;
+}
+.mainframe1:hover{
+    border: 0.3px;
+    border-radius: 15px;
+    border-color: rgb(255, 255, 255);
+    padding-bottom: 65px;
+    padding-left: 25px;
+    border-style: inset;
+    padding-right: 25px;
+    box-shadow: 3px 6px rgb(187, 187, 187);
+}
+.mainframe1 .button{
+    visibility: hidden;
+}
+.mainframe1:hover .button{
+    visibility: visible;
+    background-color: white;
+     z-index: 2;
+      margin-left: 4px;
+     cursor: pointer;
+     width: 100px;
+     color: black;
+     padding: 13px 0px;
+     font-weight: 800;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: hidden;
+}
+.mainframe1 .button:hover{
+    text-decoration: underline;
+}
+.mainframe1 .MyAddtoCart{
+    visibility: hidden;
+}
+.mainframe1:hover .MyAddtoCart{
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 25%;
+    width: 150px;
+    background-color: #FEDF00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mainframe1 .cropbutton{
+    
+    visibility: hidden;
+}
+.mainframe1:hover .cropbutton{
+    background-color: white;
+    z-index: 2;
+    margin-left: 25px;
+    cursor: pointer;
+    /* width: 100px; */
+    color: black;
+    padding: 13px 0px;
+    font-weight: 800;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: hidden;
+    visibility: visible;
+}
+.mainframe1 .cropbutton:hover{
+    text-decoration: underline;
+}
+.mainframe1 svg{
+    visibility: hidden;
+}
+.mainframe1:hover svg{
+    visibility: visible;
+}
+
+/* .mainframe2:hover{
+    border: 1px;
+    border-radius: 15px;
+    border-color: black;
+    padding-bottom: 65px;
+    padding-left: 25px;
+    border-style: inset;
+    padding-right: 25px;
+    box-shadow: 5px 10px darkgray;
+} */
+
+.form-group{
+    font-size: 25px;
+}
+.form-group input{
+    font-size: 25px;
+}
+
+.row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 .frame1{
-    height: 280px;
+    height: 320px;
     width: 320px;
-   background-image: url("/public/f.png");
-   background-size: 320px 280px;
-   justify-content: center;
-   align-items: center;
+    background-image: url("/public/f.png");
+    background-size: 320px 320px;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
 }
 .frame1 img{
@@ -19,11 +136,11 @@
 
 .framee1{
     height: 320px;
-    width: 280px;
-   background-image: url("/public/f.png");
-   background-size: 280px 320px;
-   justify-content: center;
-   align-items: center;
+    width: 320px;
+    background-image: url("/public/f.png");
+    background-size: 320px 320px;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
 }
 .framee1 img{
@@ -35,8 +152,9 @@
 
 
 .frame2{
+    padding-left: 1px;
     height: 280px;
-    width: 313px;
+    width: 314px;
     background-image: url("/public/f2.png");
     background-size: 320px 280px;
     justify-content: center;
@@ -49,8 +167,9 @@
     z-index: -1;
 }
 .framee2{
-    height: 320px;
-    width: 276px;
+    padding-left: 1px;
+    height: 314px;
+    width: 275px;
     background-image: url("/public/f2.png");
     background-size: 280px 320px;
     justify-content: center;

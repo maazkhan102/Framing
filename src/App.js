@@ -1,11 +1,9 @@
-import './App.css';
-import Frame from './Components/Frame';
-<link rel="stylesheet" href="croppie.css" />
+import Frame from "./Components/Frame";
+import '../src/App.css'
 function App() {
   return (
     <div className="App">
-
-      <Frame/>
+        <Frame/>
     </div>
   );
 }
