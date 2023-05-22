@@ -3,7 +3,7 @@ import Slider from "@material-ui/core/Slider";
 import Cropper from "react-easy-crop";
 import getCroppedImg from "./Crop";
 
-const EasyCrop = ({ image }) => {
+const EasyCrop = ({ image,...restProps }) => {
   const [crop, setCrop] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
   const [croppedAreaPixels, setCroppedAreaPixels] = useState(null);
@@ -21,6 +21,7 @@ const EasyCrop = ({ image }) => {
       );
       console.log("donee", { croppedImage });
       setCroppedImage(croppedImage);
+      restProps.setCropped(croppedImage);
     } catch (e) {
       console.error(e);
     }
